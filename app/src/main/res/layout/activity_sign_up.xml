@@ -12,7 +12,6 @@
         android:gravity="center_horizontal"
         android:padding="40dp">
 
-        <!-- Logo -->
         <ImageView
             android:layout_marginTop="30dp"
             android:layout_width="120dp"
@@ -20,7 +19,6 @@
             android:src="@drawable/logo"
             android:contentDescription="App Logo" />
 
-        <!-- Create Account Text -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,7 +38,6 @@
             android:layout_marginBottom="24dp"
             android:gravity="center" />
 
-        <!-- Name Field -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -58,7 +55,6 @@
             android:padding="12dp"
             android:textSize="16sp" />
 
-        <!-- Email Field -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -77,7 +73,6 @@
             android:padding="12dp"
             android:textSize="16sp" />
 
-        <!-- Password Field -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -96,7 +91,6 @@
             android:padding="12dp"
             android:textSize="16sp" />
 
-        <!-- Date of Birth Field -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -113,7 +107,6 @@
             android:padding="12dp"
             android:spinnerMode="dropdown" />
 
-        <!-- Sign Up Button -->
         <Button
             android:id="@+id/btn_signup"
             android:layout_width="match_parent"
