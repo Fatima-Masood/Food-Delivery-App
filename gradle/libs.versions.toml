@@ -7,6 +7,8 @@ appcompat = "1.7.0"
 material = "1.12.0"
 activity = "1.9.2"
 constraintlayout = "2.1.4"
+gitv = "4.12.0"
+vv = "4.12.0"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -19,4 +21,7 @@ constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayo
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+github =  {id = 'com.github.bumptech.glide:glide', version.ref = 'gitv'}
+processor =  {id = 'com.github.bumptech.glide:compiler', version.ref = 'vv'}
+
 

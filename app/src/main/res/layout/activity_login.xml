@@ -4,82 +4,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
     android:orientation="vertical"
-    android:background="@drawable/login_page">
+    android:background="@drawable/login_page"
+    android:paddingStart="50dp"
+    android:paddingEnd="50dp"
+    android:paddingTop="100dp"
+    android:paddingBottom="24dp"
+    tools:context=".Login">
 
+    <!-- Logo ImageView -->
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="213dp"
-        android:layout_height="207dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginBottom="20dp"
-        android:src="@drawable/logo" />
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/logo"
+        android:adjustViewBounds="true"
+        android:maxWidth="180dp"
+        android:maxHeight="180dp"/>
 
+    <!-- Login Text -->
     <TextView
         android:id="@+id/Login_text"
-        android:layout_width="138dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="135dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
         android:text="Login"
-        android:textSize="40sp"
-        android:textStyle="bold" />
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
 
+    <!-- Sign In Text -->
     <TextView
         android:id="@+id/sign_in_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="100dp"
-        android:text="Sign In to Countinue"
-        android:textSize="20sp"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="Sign In to Continue"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
 
+    <!-- Name Label -->
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Name:"
-        android:textSize="15sp"
+        android:textSize="16sp"
         android:textStyle="bold"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="20dp"/>
+        android:textColor="@android:color/black"/>
 
+    <!-- Name Input -->
     <EditText
         android:id="@+id/editname"
-        android:layout_width="300dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Enter name"
         android:inputType="text"
-        android:hint="enter name" />
+        android:padding="12dp"/>
+
+    <!-- Password Label -->
     <TextView
         android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Password:"
-        android:textSize="15sp"
+        android:textSize="16sp"
         android:textStyle="bold"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="20dp"/>
+        android:textColor="@android:color/black"/>
+
+    <!-- Password Input -->
     <EditText
         android:id="@+id/editpassword"
-        android:layout_width="300dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"
-        android:inputType="text"
-        android:hint="enter password" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:padding="12dp" />
 
+    <!-- Log In Button -->
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" Log In "
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="Login"
+        android:textSize="16sp"
         />
-
-
 </LinearLayout>

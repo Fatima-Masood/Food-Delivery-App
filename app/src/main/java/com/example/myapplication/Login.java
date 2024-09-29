@@ -34,19 +34,11 @@ public class Login extends AppCompatActivity {
 
                 if(TextUtils.isEmpty(name)|| TextUtils.isEmpty(password)){
                     Toast.makeText(Login.this,"Please Enter All Fields",Toast.LENGTH_SHORT).show();
-
                 }
                 else {
-                    if(name.equals("Aatiqa")&& password.equals("aatiqa"))
-                    {
-                        Toast.makeText(Login.this,"Login Successfully",Toast.LENGTH_SHORT).show();
-                        Intent intent=new Intent(Login.this, HomeScreen.class);
-                        startActivity(intent);
-                    }
-                    else {
-                        Toast.makeText(Login.this,"Invalid Credentials",Toast.LENGTH_SHORT).show();
-
-                    }
+                    Toast.makeText(Login.this,"Login Successful",Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent(Login.this, HomeScreen.class);
+                    startActivity(intent);
                 }
             }
         });
